@@ -5,18 +5,40 @@ html {
     background-color: #fff;
 }
 
-.wrapper {
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #000;
+    line-height: 60px;
+    width: 100%;
+}
+nav #wrapper {
     width: auto;
     margin: auto;
+    line-height: 100%;
 }
-nav.putih{
-    background-color: #fff;
-}
+
 nav .logo {
     float: left;
     position: relative;
-    line-height: 55px;
+    line-height: 60px;
+    color: #000;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    margin: 0px 20px 10px 0px;
+}
+
+nav .name {
     text-align: center;
+    font-family:'courier';
+    font-style: bold;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
 }
 
 nav .menu {
@@ -24,4 +46,33 @@ nav .menu {
     position: relative;
     line-height: 40px;
     text-align: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    margin: 0px 20px 10px 0px;
 }
+
+nav .menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: blue;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
