@@ -1,4 +1,27 @@
-body {
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
     background-color: #fff;
 }
 
+.wrapper {
+    width: auto;
+    margin: auto;
+}
+nav.putih{
+    background-color: #fff;
+}
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .menu {
+    float: right;
+    position: relative;
+    line-height: 40px;
+    text-align: left;
+}
