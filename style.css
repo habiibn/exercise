@@ -7,12 +7,13 @@ html {
 
 nav {
     z-index: 100;
-    color: #fff;
+    background-color: #7DE5ED;
     text-align: center;
     position: fixed;
     border-bottom: 1px solid #000;
     line-height: 60px;
     width: 100%;
+    margin: auto;
 }
 nav #wrapper {
     width: auto;
@@ -29,7 +30,7 @@ nav .logo {
     border: 2px solid black;
     border-radius: 10px;
     background-color: bisque;
-    margin: 0px 20px 10px 0px;
+    margin: 10px 20px 10px 20px;
 }
 
 nav .name {
@@ -49,7 +50,7 @@ nav .menu {
     border: 2px solid black;
     border-radius: 10px;
     background-color: bisque;
-    margin: 0px 20px 10px 0px;
+    margin: 10px 20px 10px 20px;
 }
 
 nav .menu ul {
@@ -57,12 +58,14 @@ nav .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav .menu ul li {
     list-style-type: none;
     float: left;
     line-height: 60px;
+    border: 1px solid black;
 }
 
 nav ul li a {
@@ -76,3 +79,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+
+
+
+.foot-wrapper {
+    background-color: #7DE5ED;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid black; 
+}
