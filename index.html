@@ -16,13 +16,16 @@
         <nav id="navbar">
             <div id="wrapper">
                 <div class="logo">
-                    <a href="./index.html"><div class="name">SignaLearn</div></a>
+                    <a href="./index.html">
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/heartbeat-5380118-4504862.png" alt="SignaLearn" class="img-logo">
+                        <div class="name">SignaLearn</div>
+                    </a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="signal">Sinyal</a></li>
-                        <li><a href="system">Sistem</a></li>
-                        <li><a href="analysis">Analisis</a></li>
+                        <li><a href="#signal">Sinyal</a></li>
+                        <li><a href="#system">Sistem</a></li>
+                        <li><a href="#analysis">Analisis</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,12 +36,12 @@
         <section id="signal">
             <div id="sig-inner">
                 <!-- Signal : Brief Explanation -->
-                <div id="sig-main">
-                    Sinyal adalah
+                <article id="sig-main">
+                    <p>Sinyal adalah</p>
                 </div>
                 <!-- Unit Step -->
                 <article id="step">
-                    <div id="sig-main-step">
+                    <div class="description">
                         <p>Ketika kita menekan saklar untuk menyalakan lampu, arus listrik mengalir sehingga lampu dapat menyala. Namun sebelum kita menekan saklar tidak ada arus listrik yang mengalir, fenomena merupakan perumpaan dari sinyal unit step. Sinyal ini memiliki nilai ketika diberikan suatu pemicu, sinyal ini tidak memiliki nilai sebelum pemicu tersebut diberikan. </p>
                         <aside>
                             Sebagaimana semestinya
@@ -46,34 +49,30 @@
                         <p>Biasanya <b>sinyal unit step mempunyai nilai mulai dari waktu nol detik dan seterusnya</b>, namun tidak memiliki nilai di waktu negatif.</p>
                     </div>
                     <aside>
-                        <div id="img-wrapper">
-                            
+                        <div class="img-wrapper">
                             <img src="https://qph.cf2.quoracdn.net/main-qimg-da30ced9ae53a7daaa6d2690982db9fe" alt="Step Signal" class="responsive">
-                            
                         </div>
                     </aside>
                 </article>
                 <!-- Unit Impulse -->
                 <article id="impulse">
-                    <div id="sig-main-impulse">
+                    <div class="description">
                         <p><b>Pernahkah teman-teman mengamati bagaimana bentuk dari sinyal yang dihasilkan detak jantung?</b></p>
                         <p>Sinyal detak jantung merupakan sinyal sesaat yang berdenyut setiap interval waktu tertentu dan memiliki nilai sebesar denyutan detak jantung. Sinyal inilah yang dinamakan dengan sinyal impuls, <b>sinyal yang memiliki nilai sesaat pada waktu tertentu saja.</b> </p>
                     </div>
                     <aside>
-                        <div id="img-wrapper">
-                            <div id="img-sig-impulse">
-                                <img src="https://qph.cf2.quoracdn.net/main-qimg-78c64406e0a3611480bb8aa656833fe1" alt="#" class="responsive">
-                            </div>
+                        <div class="img-wrapper">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-78c64406e0a3611480bb8aa656833fe1" alt="#" class="responsive">
                         </div>
                     </aside>
                 </article>
                 <!-- Rectangular Signal -->
                 <article id="rectangular">
-                    <div id="sig-main-rect">
+                    <div class="description">
                         <p>Seperti namanya, sinyal rectangular merupakan <b>sinyal yang berbentuk seperti persegi atau persegi panjang</b>. Sinyal ini banyak digunakan untuk pengiriman informasi dalam format digital 0 dan 1. </p>
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-rect">
                                 <img src="#" alt="#" class="responsive">
                             </div>
@@ -82,11 +81,11 @@
                 </article>
                 <!-- Polynomial Signal -->
                 <article id="polynomial">
-                    <div id="sig-main-poly">
+                    <div class="description">
                         <p>Sinyal <b><i>polynomial</i></b></p>
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-poly">
                                 <img src="#" alt="#" class="responsive">
                             </div>
@@ -95,11 +94,11 @@
                 </article>
                 <!-- Exponential Signal -->
                 <article id="exponential">
-                    <div id="sig-main-exp">
+                    <div class="description">
                         <p>Sinyal eksponensial</p>
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-exp">
                                 <img src="#" alt="#" class="responsive">
                             </div>
@@ -108,11 +107,11 @@
                 </article>
                 <!-- Unit Ramp -->
                 <article id="ramp">
-                    <div id="sig-main-ramp">
+                    <div class="description">
                         Sinyal unit Ramp
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-ramp">
                                 <img src="#" alt="#" class="responsive">
                             </div>
@@ -121,11 +120,11 @@
                 </article>
                 <!-- Triangular Signal -->
                 <article id="triangular">
-                    <div id="sig-main-tria">
+                    <div class="description">
                         Sinyal triangular
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-tria">
                                 <img src="#" alt="#" class="responsive">
                             </div>
@@ -134,11 +133,11 @@
                 </article>
                 <!-- Sinc Signal -->
                 <article id="sinc">
-                    <div id="sig-main-sinc">
-                        Sinyal sinc
+                    <div class="description">
+                        Sinyal sinc 
                     </div>
                     <aside>
-                        <div id="img-wrapper">
+                        <div class="img-wrapper">
                             <div id="img-sig-sinc">
                                 <img src="#" alt="#" class="responsive">
                             </div>
