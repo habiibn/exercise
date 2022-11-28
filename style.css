@@ -23,7 +23,7 @@ header {
 nav {
     display: grid;
     width: 100%;
-    background-color: #2c832c;
+    background-color: rgb(2, 189, 42);
     position: sticky;
 }
 
@@ -184,3 +184,15 @@ p {
     line-height: 60px;
     border: 1px solid black; 
 }
+
+
+
+@media only screen and (max-width: 430px) {
+    nav {
+        background-color: rgb(4, 245, 56);
+    }   
+    nav .menu {
+        float: left;
+        scroll-behavior: smooth;
+    }
+  }
