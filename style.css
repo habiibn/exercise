@@ -16,6 +16,7 @@ body {
 header {
     display: flex;
     width: 100%;
+    position: sticky;
 }
 
 nav {
@@ -127,14 +128,14 @@ aside {
     /* border-radius: 10px; */
 }
 
-aside img {
+/* aside img {
     /* min-width: 50%;
     max-height: 50%; */
-    width: auto;
-    position: relative;
+    /* width: auto; */
+    /* position: relative; */
     /* align-items: flex-end; */
     /* justify-content: center; */
-}
+} */
 
 
 .sig-main {
@@ -155,6 +156,17 @@ aside img {
     border-radius: 10px;
     margin: 10px 0px 10px 0px;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+/* .img-wrapper .img {
+    width: 100%;
+    height: auto;
+} */
 
 .sig-main-impulse {
     /* display: block; */
