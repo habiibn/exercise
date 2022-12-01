@@ -12,16 +12,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-// When windows width less than 500px navbar will shrink
-var tombolMenu = document.getElementsByClassName("three-strips");
-var menu = document.getElementsByClassName("link-menu");
-
-function klikMenu() {
-    tombolMenu.click(function () {
-        menu.toggle();
-    });
-    menu.click(function () {
-        menu.toggle();
-    });
-}
