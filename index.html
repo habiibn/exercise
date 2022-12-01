@@ -23,7 +23,9 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#signal">Sinyal</a></li>
+                        <li><a href="#signal">Sinyal
+                            <span>
+                        </a></li>
                         <li><a href="#system">Sistem</a></li>
                         <li><a href="#analysis">Analisis</a></li>
                     </ul>
@@ -36,12 +38,16 @@
         <section id="signal">
             <div id="sig-inner">
                 <!-- Signal : Brief Explanation -->
+                <h1>Sinyal</h1>
+                <h2>1. Overview</h2>
                 <article id="sig-main">
-                    <p>Sinyal adalah</p>
+                    <p>Dalam beberapa dekade terakhir teknologi telekomunikasi telah berkembang sangat pesat yang membuat informasi dapat diakses dengan sangat mudah.</p>
                 </div>
                 <!-- Unit Step -->
+                <h2>2. Jenis Sinyal Dasar</h2>
                 <article id="step">
                     <div class="description">
+                        <h3>Sinyal Unit Step</h3>
                         <p>Ketika kita menekan saklar untuk menyalakan lampu, arus listrik mengalir sehingga lampu dapat menyala. Namun sebelum kita menekan saklar tidak ada arus listrik yang mengalir, fenomena merupakan perumpaan dari sinyal unit step. Sinyal ini memiliki nilai ketika diberikan suatu pemicu, sinyal ini tidak memiliki nilai sebelum pemicu tersebut diberikan. </p>
                         <aside>
                             Sebagaimana semestinya
@@ -50,7 +56,7 @@
                     </div>
                     <aside>
                         <div class="img-wrapper">
-                            <img src="https://qph.cf2.quoracdn.net/main-qimg-da30ced9ae53a7daaa6d2690982db9fe" alt="Step Signal" class="responsive">
+                            <img src="./assets/unit-step.jpg" alt="Step Signal" class="responsive">
                         </div>
                     </aside>
                 </article>
@@ -62,7 +68,7 @@
                     </div>
                     <aside>
                         <div class="img-wrapper">
-                            <img src="https://qph.cf2.quoracdn.net/main-qimg-78c64406e0a3611480bb8aa656833fe1" alt="#" class="responsive">
+                            <img src="./assets/unit-impulse.gif" alt="Unit Impulse" class="responsive">
                         </div>
                     </aside>
                 </article>
@@ -74,7 +80,7 @@
                     <aside>
                         <div class="img-wrapper">
                             <div id="img-sig-rect">
-                                <img src="#" alt="#" class="responsive">
+                                <img src="./assets/rectangular.png" alt="Rectangular Signal" class="responsive">
                             </div>
                         </div>
                     </aside>
@@ -82,12 +88,13 @@
                 <!-- Polynomial Signal -->
                 <article id="polynomial">
                     <div class="description">
-                        <p>Sinyal <b><i>polynomial</i></b></p>
+                        <p>Sinyal <b><i>polynomial</i></b> merupakan sinyal yang memiliki karakteristik seperti persamaan matematis polynomial. Seperti namanya sinyal ini biasanya digunakan untuk mengirimkan sinyal matematis pada sistem yang sederhana maupun kompleks.</p>
+                        <p>Salah satu bentuk sinyal polynomial yang sering digunakan ialah sinyal sinusoidal.</p>
                     </div>
                     <aside>
                         <div class="img-wrapper">
                             <div id="img-sig-poly">
-                                <img src="#" alt="#" class="responsive">
+                                <img src="./assets/sine-poly.png" alt="Sinusoidal" class="responsive">
                             </div>
                         </div>
                     </aside>
@@ -95,12 +102,14 @@
                 <!-- Exponential Signal -->
                 <article id="exponential">
                     <div class="description">
-                        <p>Sinyal eksponensial</p>
+                        <h3>Sinyal Eksponensial</h3>
+                        <p>Ketika kita menyusun sebuah data pertumbuhan atau peluruhan maka sinyal eksponensial dapat menjadi pilihan.</p>
+                        <p>Sinyal eksponensial memiliki nilai yang meningkat atau menurun sesuai dengan pangkat dari bilangan yang digunakan. Umumnya bilangan basis eksponensial yang digunakan adalah bilangan euler atau bilangan natural yang sering dituliskan sebagai 'e'.</p>
                     </div>
                     <aside>
                         <div class="img-wrapper">
                             <div id="img-sig-exp">
-                                <img src="#" alt="#" class="responsive">
+                                <img src="./assets/exp-sig.png" alt="Eksponensial" class="responsive">
                             </div>
                         </div>
                     </aside>
@@ -108,30 +117,33 @@
                 <!-- Unit Ramp -->
                 <article id="ramp">
                     <div class="description">
-                        Sinyal unit Ramp
+                        <h3>Sinyal Unit Ramp</h3>
+                        <p>Sinyal unit ramp ini mirip dengan sinyal eksponensial yang terus bertumbuh akan tetapi pertumbuhannya tetap. </p>
                     </div>
                     <aside>
                         <div class="img-wrapper">
                             <div id="img-sig-ramp">
-                                <img src="#" alt="#" class="responsive">
+                                <img src="./assets/unit-ramp.png" alt="Sinyal Ramp" class="responsive">
                             </div>
                         </div>
                     </aside>
+                    <p> Pada beberapa implementasi bentuk dari sinyal ini biasanya mirip seperti mata gergaji. Sinyal yang memiliki bentuk yang semacam ini dinamakan sebagai sinyal gergaji.</p>
                 </article>
                 <!-- Triangular Signal -->
                 <article id="triangular">
                     <div class="description">
-                        Sinyal triangular
+                        <h3>Sinyal Triangular</h3>
+                        <p>Seperti namanya, sinyal ini memiliki bentuk seperti segitiga. Umumnya sinyal ini digunakan untuk analisis sistem yang kompleks.</p>
                     </div>
                     <aside>
                         <div class="img-wrapper">
                             <div id="img-sig-tria">
-                                <img src="#" alt="#" class="responsive">
+                                <img src="./assets/triag-sig.png" alt="Sinyal Triangular" class="responsive">
                             </div>
                         </div>
                     </aside>
                 </article>
-                <!-- Sinc Signal -->
+                <!-- Sinc Signal
                 <article id="sinc">
                     <div class="description">
                         Sinyal sinc 
@@ -143,17 +155,21 @@
                             </div>
                         </div>
                     </aside>
-                </article>
+                </article> -->
 
             </div>
         </section>
         <!-- Section 2 -->
         <section id="system">
-            <div class="sys-inner"></div>
+            <div class="sys-inner">
+                Sistem
+            </div>
         </section>
         <!-- Section 3 -->
         <section id="analysis">
-            <div class="ans-inner"></div>
+            <div class="ans-inner">
+                Analisis
+            </div>
         </section>
     </main>
     
