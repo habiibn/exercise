@@ -38,7 +38,6 @@ nav .logo {
     line-height: 60px;
     border: 1px solid black;
     border-radius: 30px;
-    border-style: double;
     background-color: rgba(255, 255, 255, 0.205);
     margin: 10px 10px 10px 10px;
 }
@@ -47,6 +46,7 @@ nav .logo {
     width: 50px;
     border-radius: 50%;
     border: 2px solid #fff;
+    background-color: rgb(240, 199, 18);
 }
 
 .logo a {
@@ -70,14 +70,14 @@ nav .name {
 /*============= Styling Menu =============*/
 nav .menu {
     float: right;
+    gap: 1em;
     position: relative;
     background-color: rgba(65, 65, 65, 0.5);
-    border-radius: 30px;
+    border-radius: 8px;
     margin: 10px 10px 10px 10px;
 }
 
 nav .menu ul {
-    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -91,6 +91,12 @@ nav .menu ul li {
     color: blue;
 }
 
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
 nav ul li a {
     font-size: 17.5px;
     color: #fff;
@@ -99,10 +105,39 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: black;
-    transition: 1ms;
-    flex-shrink: -0.2;
+.Sinyal {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgba(2, 189, 43, 0.8);
+    padding: 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 40px;
+    left: 20px;
+    }
+
+.dropdown li {
+    font-size: 17.5px;
+    color: #fff;
+    width: 8em;
+    text-align: left;
+}
+
+.dropdown li a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.Sinyal:hover .dropdown {
+    transition: 0.3s ease;
+    display: block;
 }
 
 /*============= Styling Main Content =============*/
@@ -177,6 +212,7 @@ h3 {
 p {
     padding-bottom: 20px;
 }
+
 #img-wrapper {
     display: flex;
     position: relative;
