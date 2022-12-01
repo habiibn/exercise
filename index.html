@@ -4,6 +4,7 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <title>SignaLearn: Mengenal Konsep Sinyal dan Sistem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -21,8 +23,16 @@
                         <div class="name">SignaLearn</div>
                     </a>
                 </div>
+
                 <div class="menu">
-                    <ul>
+                    <ul class="link-menu">
+                        <!-- <input type="checkbox" id="nav-check"/>
+                        <label for="nav-check" class="three-strips">&#9776</label> -->
+                        <a href="#" class="three-strips">
+                            <span class="strip"></span>
+                            <span class="strip"></span>
+                            <span class="strip"></span>
+                        </a>
                         <li class="Sinyal">
                             <a href="#signal">Sinyal</a>
                             <ul class="dropdown">
@@ -43,152 +53,172 @@
         </nav>
     </header>
     <main>
-        <!-- Section 1 : Signal -->
-        <section id="signal">
-            <div id="sig-inner">
-                <!-- Signal : Brief Explanation -->
-                <h1>Sinyal</h1>
-                <h2>1. Overview</h2>
-                <article id="sig-main">
-                    <p>Dalam beberapa dekade terakhir teknologi telekomunikasi telah berkembang sangat pesat yang membuat informasi dapat diakses dengan sangat mudah. Namun tahukah kalian bagaimana informasi itu bisa sampai?</p>
+        <div class="konten">
+            <!-- Section 1 : Signal -->
+            <section id="signal">
+                <div id="sig-inner">
+                    <!-- Signal : Brief Explanation -->
+                    <h1>Mengenal Apa itu Sinyal dan Macam-macamnya</h1>
                     <p></p>
+                    <h2>Overview</h2>
+                    <article id="sig-main">
+                        <p>Dalam beberapa dekade terakhir teknologi telekomunikasi telah berkembang sangat pesat yang
+                            membuat informasi dapat diakses dengan sangat mudah. Namun tahukah kalian bagaimana
+                            informasi itu bisa sampai?</p>
+                        <p></p>
+                    </article>
+                    <!-- Unit Step -->
+                    <h2>2. Jenis Sinyal Dasar</h2>
+                    <article id="step">
+                        <div class="description">
+                            <h3>Sinyal Unit Step</h3>
+                            <p>Ketika kita menekan saklar untuk menyalakan lampu, arus listrik mengalir sehingga lampu dapat
+                                menyala. Namun sebelum kita menekan saklar tidak ada arus listrik yang mengalir, fenomena
+                                merupakan perumpaan dari sinyal unit step. Sinyal ini memiliki nilai ketika diberikan suatu
+                                pemicu, sinyal ini tidak memiliki nilai sebelum pemicu tersebut diberikan. </p>
+                            
+                                Sebagaimana semestinya
+                            
+                            <p>Biasanya <b>sinyal unit step mempunyai nilai mulai dari waktu nol detik dan seterusnya</b>,
+                                namun tidak memiliki nilai di waktu negatif.</p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <img src="./assets/unit-step.jpg" alt="Step Signal" class="responsive">
+                            </div>
+                        
+                    </article>
+                    <!-- Unit Impulse -->
+                    <article id="impulse">
+                        <div class="description">
+                            <h3>Sinyal Unit Impuls</h3>
+                            <p><b>Pernahkah teman-teman mengamati bagaimana bentuk dari sinyal yang dihasilkan detak
+                                    jantung?</b></p>
+                            <p>Sinyal detak jantung merupakan sinyal sesaat yang berdenyut setiap interval waktu tertentu
+                                dan memiliki nilai sebesar denyutan detak jantung. Sinyal inilah yang dinamakan dengan
+                                sinyal impuls, <b>sinyal yang memiliki nilai sesaat pada waktu tertentu saja.</b> </p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <img src="./assets/unit-impulse.gif" alt="Unit Impulse" class="responsive">
+                            </div>
+                        
+                    </article>
+                    <!-- Rectangular Signal -->
+                    <article id="rectangular">
+                        <div class="description">
+                            <h3>Sinyal Rectangular</h3>
+                            <p>Seperti namanya, sinyal rectangular merupakan <b>sinyal yang berbentuk seperti persegi atau
+                                    persegi panjang</b>. Sinyal ini banyak digunakan untuk pengiriman informasi dalam format
+                                digital 0 dan 1. </p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <div id="img-sig-rect">
+                                    <img src="./assets/rectangular.png" alt="Rectangular Signal" class="responsive">
+                                </div>
+                            </div>
+                        
+                    </article>
+                    <!-- Polynomial Signal -->
+                    <article id="polynomial">
+                        <div class="description">
+                            <h3>Sinyal Polynomial</h3>
+                            <p>Sinyal <b><i>polynomial</i></b> merupakan sinyal yang memiliki karakteristik seperti
+                                persamaan matematis polynomial. Seperti namanya sinyal ini biasanya digunakan untuk
+                                mengirimkan sinyal matematis pada sistem yang sederhana maupun kompleks.</p>
+                            <p>Salah satu bentuk sinyal polynomial yang sering digunakan ialah sinyal sinusoidal.</p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <div id="img-sig-poly">
+                                    <img src="./assets/sine-poly.png" alt="Sinusoidal" class="responsive">
+                                </div>
+                            </div>
+                        
+                    </article>
+                    <!-- Exponential Signal -->
+                    <article id="exponential">
+                        <div class="description">
+                            <h3>Sinyal Eksponensial</h3>
+                            <p>Ketika kita menyusun sebuah data pertumbuhan atau peluruhan maka sinyal eksponensial dapat
+                                menjadi pilihan.</p>
+                            <p>Sinyal eksponensial memiliki nilai yang meningkat atau menurun sesuai dengan pangkat dari
+                                bilangan yang digunakan. Umumnya bilangan basis eksponensial yang digunakan adalah bilangan
+                                euler atau bilangan natural yang sering dituliskan sebagai 'e'.</p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <div id="img-sig-exp">
+                                    <img src="./assets/exp-sig.png" alt="Eksponensial" class="responsive">
+                                </div>
+                            </div>
+                        
+                    </article>
+                    <!-- Unit Ramp -->
+                    <article id="ramp">
+                        <div class="description">
+                            <h3>Sinyal Unit Ramp</h3>
+                            <p>Sinyal unit ramp ini mirip dengan sinyal eksponensial yang terus bertumbuh akan tetapi
+                                pertumbuhannya tetap. </p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <div id="img-sig-ramp">
+                                    <img src="./assets/unit-ramp.png" alt="Sinyal Ramp" class="responsive">
+                                </div>
+                            </div>
+                        
+                        <p> Pada beberapa implementasi bentuk dari sinyal ini biasanya mirip seperti mata gergaji. Sinyal
+                            yang memiliki bentuk yang semacam ini dinamakan sebagai sinyal gergaji.</p>
+                    </article>
+                    <!-- Triangular Signal -->
+                    <article id="triangular">
+                        <div class="description">
+                            <h3>Sinyal Triangular</h3>
+                            <p>Seperti namanya, sinyal ini memiliki bentuk seperti segitiga. Umumnya sinyal ini digunakan
+                                untuk analisis sistem yang kompleks.</p>
+                        </div>
+                        
+                            <div class="img-wrapper">
+                                <div id="img-sig-tria">
+                                    <img src="./assets/triag-sig.png" alt="Sinyal Triangular" class="responsive">
+                                </div>
+                            </div>
+                        
+                    </article>
                 </div>
-                <!-- Unit Step -->
-                <h2>2. Jenis Sinyal Dasar</h2>
-                <article id="step">
-                    <div class="description">
-                        <h3>Sinyal Unit Step</h3>
-                        <p>Ketika kita menekan saklar untuk menyalakan lampu, arus listrik mengalir sehingga lampu dapat menyala. Namun sebelum kita menekan saklar tidak ada arus listrik yang mengalir, fenomena merupakan perumpaan dari sinyal unit step. Sinyal ini memiliki nilai ketika diberikan suatu pemicu, sinyal ini tidak memiliki nilai sebelum pemicu tersebut diberikan. </p>
-                        <aside>
-                            Sebagaimana semestinya
-                        </aside>
-                        <p>Biasanya <b>sinyal unit step mempunyai nilai mulai dari waktu nol detik dan seterusnya</b>, namun tidak memiliki nilai di waktu negatif.</p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <img src="./assets/unit-step.jpg" alt="Step Signal" class="responsive">
-                        </div>
-                    </aside>
-                </article>
-                <!-- Unit Impulse -->
-                <article id="impulse">
-                    <div class="description">
-                        <h3>Sinyal Unit Impuls</h3>
-                        <p><b>Pernahkah teman-teman mengamati bagaimana bentuk dari sinyal yang dihasilkan detak jantung?</b></p>
-                        <p>Sinyal detak jantung merupakan sinyal sesaat yang berdenyut setiap interval waktu tertentu dan memiliki nilai sebesar denyutan detak jantung. Sinyal inilah yang dinamakan dengan sinyal impuls, <b>sinyal yang memiliki nilai sesaat pada waktu tertentu saja.</b> </p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <img src="./assets/unit-impulse.gif" alt="Unit Impulse" class="responsive">
-                        </div>
-                    </aside>
-                </article>
-                <!-- Rectangular Signal -->
-                <article id="rectangular">
-                    <div class="description">
-                        <h3>Sinyal Rectangular</h3>
-                        <p>Seperti namanya, sinyal rectangular merupakan <b>sinyal yang berbentuk seperti persegi atau persegi panjang</b>. Sinyal ini banyak digunakan untuk pengiriman informasi dalam format digital 0 dan 1. </p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-rect">
-                                <img src="./assets/rectangular.png" alt="Rectangular Signal" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                </article>
-                <!-- Polynomial Signal -->
-                <article id="polynomial">
-                    <div class="description">
-                        <h3>Sinyal Polynomial</h3>
-                        <p>Sinyal <b><i>polynomial</i></b> merupakan sinyal yang memiliki karakteristik seperti persamaan matematis polynomial. Seperti namanya sinyal ini biasanya digunakan untuk mengirimkan sinyal matematis pada sistem yang sederhana maupun kompleks.</p>
-                        <p>Salah satu bentuk sinyal polynomial yang sering digunakan ialah sinyal sinusoidal.</p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-poly">
-                                <img src="./assets/sine-poly.png" alt="Sinusoidal" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                </article>
-                <!-- Exponential Signal -->
-                <article id="exponential">
-                    <div class="description">
-                        <h3>Sinyal Eksponensial</h3>
-                        <p>Ketika kita menyusun sebuah data pertumbuhan atau peluruhan maka sinyal eksponensial dapat menjadi pilihan.</p>
-                        <p>Sinyal eksponensial memiliki nilai yang meningkat atau menurun sesuai dengan pangkat dari bilangan yang digunakan. Umumnya bilangan basis eksponensial yang digunakan adalah bilangan euler atau bilangan natural yang sering dituliskan sebagai 'e'.</p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-exp">
-                                <img src="./assets/exp-sig.png" alt="Eksponensial" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                </article>
-                <!-- Unit Ramp -->
-                <article id="ramp">
-                    <div class="description">
-                        <h3>Sinyal Unit Ramp</h3>
-                        <p>Sinyal unit ramp ini mirip dengan sinyal eksponensial yang terus bertumbuh akan tetapi pertumbuhannya tetap. </p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-ramp">
-                                <img src="./assets/unit-ramp.png" alt="Sinyal Ramp" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                    <p> Pada beberapa implementasi bentuk dari sinyal ini biasanya mirip seperti mata gergaji. Sinyal yang memiliki bentuk yang semacam ini dinamakan sebagai sinyal gergaji.</p>
-                </article>
-                <!-- Triangular Signal -->
-                <article id="triangular">
-                    <div class="description">
-                        <h3>Sinyal Triangular</h3>
-                        <p>Seperti namanya, sinyal ini memiliki bentuk seperti segitiga. Umumnya sinyal ini digunakan untuk analisis sistem yang kompleks.</p>
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-tria">
-                                <img src="./assets/triag-sig.png" alt="Sinyal Triangular" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                </article>
-                <!-- Sinc Signal
-                <article id="sinc">
-                    <div class="description">
-                        Sinyal sinc 
-                    </div>
-                    <aside>
-                        <div class="img-wrapper">
-                            <div id="img-sig-sinc">
-                                <img src="#" alt="#" class="responsive">
-                            </div>
-                        </div>
-                    </aside>
-                </article> -->
-
+            </section>
+            <!-- Section 2 -->
+            <section id="system">
+                <div class="sys-inner">
+                    Sistem
+                </div>
+            </section>
+            <!-- Section 3 -->
+            <section id="analysis">
+                <div class="ans-inner">
+                    Analisis
+                </div>
+            </section>
+                </div>
+                
+        </div>
+        <aside>
+            <h2>Biodata Diri</h2>
+            <div class="img-wrapper">
+                <img src="./assets/profile.png" alt="Habib Nurkholis" class="img-profile">
             </div>
-        </section>
-        <!-- Section 2 -->
-        <section id="system">
-            <div class="sys-inner">
-                Sistem
-            </div>
-        </section>
-        <!-- Section 3 -->
-        <section id="analysis">
-            <div class="ans-inner">
-                Analisis
-            </div>
-        </section>
+            <table>
+                <thead></thead>
+            </table>
+        </aside>
     </main>
-    
+
     <footer>
         <div class="foot-wrapper">&copy;</div>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
