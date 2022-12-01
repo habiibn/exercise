@@ -1,15 +1,21 @@
-// // still failed :"
-// const activeNavbar = document.getElementById("navbar");
-// let height = activeNavbar.offsetHeight;
-// var navBar = document.getElementsByTagName("nav");
+// When page scrolled down, navigation bar will follow
+window.onscroll = function() {myFunction()};
 
-// // When page scrolled down, navigation bar will follow
-// if (activeNavbar.scrollTop >= height){
-//     navBar.style.position='fixed';
-// }
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  }
+  else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// When windows width less than 500px navbar will shrink
 var tombolMenu = document.getElementsByClassName("three-strips");
-var menu = document.getElementsByClassName("menu");
+var menu = document.getElementsByClassName("link-menu");
 
 function klikMenu() {
     tombolMenu.click(function () {
@@ -19,10 +25,3 @@ function klikMenu() {
         menu.toggle();
     });
 }
-
-document.querySelector(document).ready(function () {
-    var width = document.querySelector(window).width();
-    if (width < 450) {
-        klikMenu();
-    }
-})

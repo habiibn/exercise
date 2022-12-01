@@ -17,7 +17,7 @@ body {
 header {
     width: 100%;
     position: static;
-    display: inline-block;
+    display: flex;
 }
 
 nav {
@@ -25,12 +25,22 @@ nav {
     top: 0;
     width: 100%;
     background-color: #7FE9DE;
-    position: fixed;
+    /* position: fixed; */
 }
 
 nav .wrapper {
     margin: auto;
     display: inline-block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .main {
+    padding-top: 60px;
 }
 
 /*============= Styling logo =============*/
@@ -74,22 +84,22 @@ nav .name {
 nav .menu {
     float: right;
     gap: 1em;
-    position: relative;
-    background-color: rgba(65, 65, 65, 0.5);
+    /* position: relative; */
+    background-color: rgba(90, 90, 90, 0.7);
     border-radius: 8px;
     margin: 10px 10px 10px 10px;
 }
 
 nav .menu ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
     flex-wrap: wrap;
 }
 
 nav .menu ul li {
-    list-style-type: none;
     float: left;
+    list-style-type: none;
     line-height: 60px;
 }
 
@@ -100,7 +110,10 @@ nav .menu ul li {
 }
 
 nav ul li a {
-    font-size: 17.5px;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000;
     color: #fff;
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -112,7 +125,7 @@ nav ul li a {
 }
 
 .dropdown {
-    background-color: rgba(2, 145, 189, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
     position: absolute; 
     display: none;
@@ -142,11 +155,12 @@ nav ul li a {
     display: block;
 }
 
-input[type=checkbox]{
+/* input[type=checkbox]{
     display: none;
-}
+} */
 
 .three-strips {
+    /* display: none; */
     position: absolute;
     top: 1.7rem;
     right: 1rem;
@@ -154,20 +168,23 @@ input[type=checkbox]{
     justify-content: space-between;
     width: 30px;
     height: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
 }
 
-.three-strips .strip {
+#strip {
     color: #fff;
-    height: 3px;
+    height: 0px;
 }
 
 
 /*============= Styling Main Content =============*/
 main {
     display: flex;
-    margin-top: 60px;
     padding: 0%;
     flex-direction: row;
+    margin-top: 80px;
 }
 
 section {
@@ -194,9 +211,12 @@ aside {
     align-content: center;
     border-radius: 8px;
     margin: 20px 10px 40px 0px;
-    width: 40%;
+    width: 50%;
 }
 
+main p {
+    font-size: 17.5px;
+}
 /*============= Profile =============*/
 
 
@@ -319,7 +339,7 @@ p {
 
 /*============= Adjust Screen Width =============*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .menu {
         display: none;
         position: absolute;
@@ -329,9 +349,20 @@ p {
         text-align: center;
         padding: 16px 0;
     }
-    
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+      }
+    nav .menu ul li a {
+        color: #333;
+      }
+    .three-strips {
+        display: flex;
+    }
     main {
-        display: block;
+        flex-direction: column;
     }
 
     aside {
@@ -340,6 +371,6 @@ p {
     }
 
     .img-profile {   
-        width: 50%;
+        width: 40%;
     }
 }
