@@ -15,20 +15,22 @@ body {
 
 /*============= Styling header =============*/
 header {
-    display: flex;
     width: 100%;
     position: static;
+    display: inline-block;
 }
 
 nav {
-    display: grid;
+    display: inline;
+    top: 0;
     width: 100%;
     background-color: rgb(2, 189, 42);
-    position: sticky;
+    position: fixed;
 }
 
 nav .wrapper {
     margin: auto;
+    display: inline-block;
 }
 
 /*============= Styling logo =============*/
@@ -56,6 +58,7 @@ nav .logo {
 }
 
 nav .name {
+    display: inline;
     text-align: center;
     color: #000;
     font-family:'Trebuchet MS';
@@ -140,17 +143,42 @@ nav ul li a {
     display: block;
 }
 
+/* nav > .nav-btn {
+    display: none;
+  } */
+
+input[type=checkbox]{
+    display: none;
+}
+
+.three-strips {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.three-strips .strip {
+    color: #fff;
+    height: 3px;
+}
+
+
 /*============= Styling Main Content =============*/
 main {
-    margin: auto;
+    display: flex;
+    margin-top: 60px;
     padding: 0%;
+    flex-direction: row;
 }
 
 section {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 0px;
-    /* border-color: 2px solid #000; */
     margin-bottom: 10px;
 }
 
@@ -164,10 +192,24 @@ article {
 }   
 
 aside {
-    background-color: #fff;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
     align-content: center;
+    border-radius: 8px;
+    margin: 20px 10px 20px 0px;
+    width: 40%;
 }
 
+/*============= Profile =============*/
+
+
+.img-profile {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+}
 /*============= Section 1: Signal =============*/
 .sig-inner {
     font-size: 15px;
@@ -176,7 +218,7 @@ aside {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 28px;
     color: #000;
 }
 
@@ -226,31 +268,78 @@ p {
     min-width: 200px;
     height: auto;
     max-height: 50%;
+    background-color: #fff;
 }
 
 /*============= Styling Footer =============*/
 .foot-wrapper {
     width: 100%;
     background-color: rgb(2, 189, 42);
-    position: sticky;
+    position: relative;
     list-style-type: none;
     align-items: center;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 
 
-@media only screen and (max-width: 430px) {
-    nav {
-        background-color: rgb(4, 245, 56);
-    }   
-    nav .menu {
-        float: left;
-        scroll-behavior: smooth;
-    }
-  }
+/*============= Adjust Screen Width =============*/
 
-@media screen {
+@media only screen and (max-width: 450px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
     
+    main {
+        display: block;
+    }
+
+    aside {
+        width: auto;
+        margin: 10px 10px 10px 10px;
+    }
+
+    /* .menu li {
+        display: none;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;    
+    }
+
+    /* .menu {
+        display: block;
+    } */
+/* 
+    .three-strips {
+        display: flex;
+    }
+
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    } */
 }
