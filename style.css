@@ -24,7 +24,7 @@ nav {
     display: inline;
     top: 0;
     width: 100%;
-    background-color: rgb(2, 189, 42);
+    background-color: #7FE9DE;
     position: fixed;
 }
 
@@ -91,7 +91,6 @@ nav .menu ul li {
     list-style-type: none;
     float: left;
     line-height: 60px;
-    color: blue;
 }
 
 .menu li:hover {
@@ -113,7 +112,7 @@ nav ul li a {
 }
 
 .dropdown {
-    background-color: rgba(2, 189, 43, 0.8);
+    background-color: rgba(2, 145, 189, 0.8);
     padding: 0;
     position: absolute; 
     display: none;
@@ -192,6 +191,8 @@ article {
 }   
 
 aside {
+    padding-top: 10px;
+    text-align: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.1);
     align-content: center;
@@ -208,8 +209,44 @@ aside {
     margin: auto;
     width: 80%;
     height: auto;
+    border-radius: 50%;
     background-color: #fff;
+    border-color: #b1b1b1;
+    border-style: solid;
 }
+
+.tg-wrap {
+    padding: 5px 5px 5px 5px;
+}
+
+.tg-cont {
+    border-color:none;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg-head{
+    border-color:none;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0px auto;
+    border-color: none;
+    text-align:left;
+    vertical-align:top;
+}
+
 /*============= Section 1: Signal =============*/
 .sig-inner {
     font-size: 15px;
@@ -274,7 +311,7 @@ p {
 /*============= Styling Footer =============*/
 .foot-wrapper {
     width: 100%;
-    background-color: rgb(2, 189, 42);
+    background-color: #7FE9DE;;
     position: relative;
     list-style-type: none;
     align-items: center;
